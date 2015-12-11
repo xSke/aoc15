@@ -1,4 +1,7 @@
 [package]
 name = "aoc"
 version = "0.1.0"
-authors = ["Voltasalt <voltasalt@gmail.com>"]
+authors = ["Ske <ske@ske.pw>"]
+
+[dependencies]
+md5 = "0.1.1"
