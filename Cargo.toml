@@ -5,3 +5,4 @@ authors = ["Ske <ske@ske.pw>"]
 
 [dependencies]
 md5 = "0.1.1"
+regex = "0.1.43"
