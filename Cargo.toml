@@ -7,3 +7,4 @@ authors = ["Ske <ske@ske.pw>"]
 md5 = "0.1.1"
 regex = "0.1.43"
 bit-vec = "0.4.2"
+serde_json = "0.6.0"
