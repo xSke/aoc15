@@ -4,6 +4,7 @@ version = "0.1.0"
 dependencies = [
  "bit-vec 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "md5 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "permutohedron 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex 0.1.43 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -56,6 +57,11 @@ dependencies = [
  "rand 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc-serialize 0.3.16 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "permutohedron"
+version = "0.1.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "rand"
