@@ -51,6 +51,15 @@ fn main() {
     let sue_index = sues.iter().enumerate().filter(|&(_, sue)| {
         sue.iter().all(|(prop, val)| {
             let input_value = input.get(prop).expect(&format!("Could not find property {} in input", prop));
+            val == input_value
+        })
+    }).next().expect("Could not find matching Sue").0;
+
+    println!(" - The Sue that got you the gift was Sue #{} -", sue_index + 1);
+
+    let sue_index = sues.iter().enumerate().filter(|&(_, sue)| {
+        sue.iter().all(|(prop, val)| {
+            let input_value = input.get(prop).expect(&format!("Could not find property {} in input", prop));
             match (*prop).trim() {
                 "cats" | "trees" => val > input_value,
                 "pomeranians" | "goldfish" => val < input_value,
@@ -59,5 +68,5 @@ fn main() {
         })
     }).next().expect("Could not find matching Sue").0;
 
-    println!(" - The Sue that got you the gift was Sue #{} -", sue_index + 1);
+    println!(" - The Sue that ACTUALLY got you the gift was Sue #{} -", sue_index + 1);
 }
