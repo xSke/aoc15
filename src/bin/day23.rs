@@ -45,7 +45,7 @@ fn sim(instructions: &Vec<Instruction>, registers: &mut HashMap<String, u64>) {
 }
 
 fn main() {
-    println!("Accepting lines from stdin, empty line to stop");
+    println!("Accepting lines from stdin, Ctrl-D, Enter to stop");
     let stdin = io::stdin();
 
     let mut instructions: Vec<Instruction> = vec![];
